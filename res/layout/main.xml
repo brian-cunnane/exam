@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num1Text" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:background="#ffffff" android:minWidth="100dp" android:textColor="#000000"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/num2Text"
+              android:background="#ffffff"
+              android:minWidth="100dp" android:textColor="#000000"
+              android:layout_marginTop="38dp" android:layout_below="@+id/num1Text"
+              android:layout_alignParentStart="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/num3Text"
+              android:background="#ffffff"
+              android:minWidth="100dp" android:textColor="#000000" android:layout_below="@+id/num2Text"
+              android:layout_alignParentStart="true" android:layout_marginTop="35dp"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/num4Text"
+              android:background="#ffffff"
+              android:minWidth="100dp" android:textColor="#000000"
+              android:layout_marginTop="35dp" android:layout_below="@+id/num3Text"
+              android:layout_alignParentStart="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/num5Text"
+              android:background="#ffffff"
+              android:minWidth="100dp" android:textColor="#000000"
+              android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity One"
+            android:id="@+id/actOneButton" android:layout_below="@+id/num5Text" android:layout_alignParentStart="true"
+            android:layout_marginTop="43dp"
+            android:onClick = "onClick"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Two"
+            android:id="@+id/actTwoButton" android:layout_alignTop="@+id/actOneButton"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Three"
+            android:id="@+id/actThreeButton"
+            android:layout_alignTop="@+id/actTwoButton" android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+
